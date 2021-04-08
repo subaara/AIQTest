@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='{ds}/TestData.csv' exectype='runstepbystep' errorhandling='' type='JsDPL'/>
+<fallback useFallback='true'/>
+<step action='navigateTo' value='"https://www.amazon.in/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Hello. Sign in&quot;)' selected='true'/>
+   <accessor type='click' value='span(0,_in(link(&quot;nav-a nav-a-2 nav-active&quot;)))' selected='false'/>
+   <accessor type='click' value='span(9)' selected='false'/>
+   <accessor type='click' value='span(&quot;nav-line-1[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='link(&quot;createAccountSubmit&quot;)' selected='true'/>
+   <accessor type='click' value='link(&quot;a-button-text&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;https://www.amazon.in/ap/register?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_ya_signin&amp;prevRID=SJ1RQ6ZAKAMPVF02M3GW&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=inflex&amp;openid.mode=checkid_setup&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=inflex&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&quot;)' selected='false'/>
+   <accessor type='click' value='link(&quot;Create your Amazon account&quot;)' selected='false'/>
+   <accessor type='click' value='link(0,_in(span(&quot;a-button-inner[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(0,_in(span(&quot;Create your Amazon account[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='link(7)' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='textbox(&quot;ap_customer_name&quot;)' selected='true'/>
+   <accessor type='assertExists' value='textbox(&quot;ap_customer_name&quot;)' selected='false'/>
+   <accessor type='assertExists' value='textbox(&quot;customerName&quot;)' selected='false'/>
+   <accessor type='assertExists' value='textbox(&quot;a-input-text a-span12 auth-autofocus auth-required-field&quot;)' selected='false'/>
+   <accessor type='assertExists' value='textbox(0,_in(div(&quot;a-row a-spacing-base&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Mritunjay"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;ap_customer_name&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;customerName&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;a-input-text a-span12 auth-autofocus auth-required-field&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;a-row a-spacing-base&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Mritunjay"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;a-input-text a-span12 auth-autofocus auth-contact-verification-request-info auth-required-field&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;ap_customer_name&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;customerName&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;a-row a-spacing-base&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sdfbfdsh"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='emailbox(&quot;a-input-text a-span12 auth-contact-verification-request-info auth-require-email-validaton auth-require-fields-match auth-require-reverify-on-change auth-required-field&quot;)' selected='true'/>
+   <accessor type='setValue' value='emailbox(&quot;ap_email&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(&quot;email&quot;)' selected='false'/>
+   <accessor type='setValue' value='emailbox(0,_in(div(&quot;a-row a-spacing-base[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='emailbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"adbsjbds"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;ap_password&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;password&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;a-row a-spacing-base[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;a-form-normal a-input-text a-span12 auth-require-fields-match auth-require-password-validation auth-required-field&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sadhsh"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;ap_password_check&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;passwordCheck&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;a-row a-spacing-base[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;a-form-normal a-input-text a-span12 auth-require-fields-match auth-required-field&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='assertExists' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='assertExists' value='submit(&quot;continue&quot;)' selected='true'/>
+   <accessor type='assertExists' value='submit(&quot;a-button-input&quot;)' selected='false'/>
+   <accessor type='assertExists' value='submit(0,_in(span(&quot;a-button-inner[1]&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='submit(0,_in(span(&quot;Continue[1]&quot;)))' selected='false'/>
+   <accessor type='assertExists' value='submit(0)' selected='false'/>
+</dialect>
+</step>
+</testcase>
